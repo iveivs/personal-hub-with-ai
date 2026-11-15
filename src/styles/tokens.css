@@ -1,0 +1,68 @@
+/* Цвета, тени, шрифты; светлая и тёмная тема. */
+:root {
+  --bg: #f6f5f2;
+  --surface: #ffffff;
+  --surface-2: #efede8;
+  --text: #1d1c1a;
+  --muted: #6b6862;
+  --border: #e2dfd8;
+  --accent: #2f63d6;
+  --accent-ink: #ffffff;
+  --accent-soft: #e5ecfb;
+  --nap: #8fadec;
+  --ok: #2b8a57;
+  --ok-soft: #e1f2e8;
+  --warn: #b7720a;
+  --warn-soft: #fbefd9;
+  --danger: #c43c3c;
+  --danger-soft: #fae3e3;
+  --overlay: rgba(0, 0, 0, 0.4);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 8px 24px rgba(0, 0, 0, 0.06);
+  --radius: 12px;
+  --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --bg: #161615;
+    --surface: #1f1f1d;
+    --surface-2: #2a2927;
+    --text: #ecebe8;
+    --muted: #9c9992;
+    --border: #353431;
+    --accent: #6d97f2;
+    --accent-ink: #0f1420;
+    --accent-soft: #24304a;
+    --nap: #3f5c9c;
+    --ok: #5cc58b;
+    --ok-soft: #1d3327;
+    --warn: #e3a648;
+    --warn-soft: #3a2e17;
+    --danger: #ec7373;
+    --danger-soft: #3d2222;
+    --overlay: rgba(0, 0, 0, 0.6);
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.35);
+    color-scheme: dark;
+  }
+}
+:root[data-theme='dark'] {
+  --bg: #161615;
+  --surface: #1f1f1d;
+  --surface-2: #2a2927;
+  --text: #ecebe8;
+  --muted: #9c9992;
+  --border: #353431;
+  --accent: #6d97f2;
+  --accent-ink: #0f1420;
+  --accent-soft: #24304a;
+  --nap: #3f5c9c;
+  --ok: #5cc58b;
+  --ok-soft: #1d3327;
+  --warn: #e3a648;
+  --warn-soft: #3a2e17;
+  --danger: #ec7373;
+  --danger-soft: #3d2222;
+  --overlay: rgba(0, 0, 0, 0.6);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.35);
+  color-scheme: dark;
+}

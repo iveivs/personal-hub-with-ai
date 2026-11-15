@@ -1,0 +1,57 @@
+/* Projects */
+.proj {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  margin-bottom: 12px;
+}
+.proj.stuck {
+  border-color: var(--warn);
+}
+.proj-head {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.proj-title {
+  font-weight: 600;
+  flex: 1;
+  cursor: pointer;
+}
+.proj-outcome {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+.proj-warn {
+  background: var(--warn-soft);
+  color: var(--warn);
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 13px;
+  margin-top: 10px;
+}
+.proj .list {
+  margin: 10px 0 0;
+}
+.inline-add {
+  display: flex;
+  gap: 6px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+.inline-add input {
+  flex: 1;
+  min-width: 160px;
+  padding: 7px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+}
+.inline-add select {
+  padding: 7px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+}

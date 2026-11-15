@@ -1,0 +1,33 @@
+/* Help */
+.flow {
+  display: grid;
+  gap: 8px;
+  margin: 12px 0 20px;
+}
+.flow .node {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 14px;
+}
+.flow .node b {
+  display: block;
+}
+.flow .node span {
+  color: var(--muted);
+  font-size: 14px;
+}
+.prose {
+  max-width: 640px;
+}
+.kbd {
+  font:
+    12px ui-monospace,
+    Menlo,
+    monospace;
+  border: 1px solid var(--border);
+  border-bottom-width: 2px;
+  border-radius: 5px;
+  padding: 0 5px;
+  background: var(--surface);
+}

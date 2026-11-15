@@ -1,0 +1,36 @@
+/* Review */
+.rstep {
+  display: flex;
+  gap: 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  margin-bottom: 8px;
+}
+.rstep.done {
+  opacity: 0.6;
+}
+.rstep.done .rtitle {
+  text-decoration: line-through;
+}
+.rbody {
+  flex: 1;
+  min-width: 0;
+}
+.rtitle {
+  font-weight: 600;
+}
+.rtext {
+  font-size: 14px;
+  color: var(--muted);
+  margin: 2px 0 6px;
+}
+.rphase {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 18px 0 8px;
+}

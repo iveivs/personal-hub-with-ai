@@ -1,0 +1,71 @@
+/* Телефон: меню становится горизонтальной лентой. */
+@media (max-width: 760px) {
+  .app {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0 0 auto;
+    height: env(safe-area-inset-top, 0px);
+    z-index: 11;
+    background: var(--bg);
+  }
+  .side {
+    position: sticky;
+    top: env(safe-area-inset-top, 0px);
+    height: auto;
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
+    padding-block: 8px 6px;
+    padding-left: max(8px, env(safe-area-inset-left, 0px));
+    padding-right: max(8px, env(safe-area-inset-right, 0px));
+    background: var(--bg);
+    z-index: 10;
+  }
+  .brand {
+    display: none;
+  }
+  .nav {
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 4px;
+    scrollbar-width: none;
+  }
+  .nav::-webkit-scrollbar {
+    display: none;
+  }
+  .nav-sep {
+    display: none;
+  }
+  .nav button {
+    width: auto;
+    white-space: nowrap;
+    padding: 6px 10px;
+    flex: none;
+  }
+  .nav .count {
+    margin-left: 4px;
+  }
+  .main {
+    padding-block: 0 80px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+  .capture {
+    top: calc(52px + env(safe-area-inset-top, 0px));
+  }
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+  .desk-only {
+    display: none;
+  }
+  .flabel {
+    min-width: 0;
+    width: 100%;
+  }
+  h1 {
+    font-size: 21px;
+  }
+}

@@ -1,0 +1,49 @@
+/* Filters */
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.frow {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.flabel {
+  font-size: 13px;
+  color: var(--muted);
+  min-width: 92px;
+}
+.pill {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 16px;
+  padding: 3px 12px;
+  font-size: 13px;
+}
+.pill:hover {
+  background: var(--surface-2);
+}
+.pill.on {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--accent-soft);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+.cta p {
+  margin: 0;
+  flex: 1;
+  min-width: 200px;
+}
